@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+
+
+    android:background="@drawable/corner">
+
+    <TextView
+        android:id="@+id/title_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textColor="#1B1919"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_rv" />
+
+    <TextView
+        android:id="@+id/display_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="this is the to do list app"
+        android:textColor="#151515"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/line"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+package com.example.to_dolistapp;
+
+
+import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
+import androidx.room.Delete;
+import androidx.room.Insert;
+import androidx.room.Query;
+import androidx.room.Update;
+
+import org.w3c.dom.Node;
+
+import java.util.List;
+
+@Dao
+public interface NotesDao {
+    @Insert
+    public void insert(Notes notes);
+    @Update
+    public void update(Notes notes);
+    @Delete
+    public void delete(Notes notes);
+    @Query("SELECT * FROM my_notes")
+    public LiveData<List<Notes>> getAllData();
+}
